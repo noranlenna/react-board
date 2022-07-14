@@ -1,12 +1,19 @@
-import { Link } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <div className="">
 
-        <Link to={"/homepage"}>homepage</Link>
-        <Link to={"/loginpage"}>loginpage</Link>
+          <nav>
+            <Link to={"/home"}>
+              <button type='button'>홈</button></Link>
+            <Link to={"/board"}>
+              <button type='button'>게시판</button></Link>
+            <Link to={"/login"}>
+              <button type='button'>로그인</button></Link>
+          </nav>
+          <Outlet/>
       </div>
     </div>
   );
