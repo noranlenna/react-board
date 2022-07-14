@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Index() {
+function LoginPage() {
 	return (
 		<div>
 			<div className="">
@@ -10,4 +10,4 @@ function Index() {
 	);
 }
 
-export default Index;
+export default LoginPage;
